@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+html {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(10, 10, 10);
+}
+
+#mainlink {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+}
+
+a {
+    transition: 0.3s;
+    color: darkgray;
+}
+
+a:hover {
+    color: dimgrey;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "header icons";
+    width: 100%;
+}
+
+.header {
+    grid-area: header;
+}
+
+.icons {
+    grid-area: icons;
+    text-align: right;
+    align-self: flex-end;
+}
+
+footer {
+    font-size: large;
+    margin-top: 50px;
+    border-top: 2px lightgray solid;
+}
+
+.footer {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 30px;
+    grid-template-areas: "tc tc" "quote contact";
+}
+
+.contact {
+    grid-area: contact;
+    text-align: left;
+}
+
+.quote {
+    grid-area: quote;
+    text-align: right;
+}
+
+.tc {
+    grid-area: tc;
+    text-align: center;
+    height: min-content;
+}
