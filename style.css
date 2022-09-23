@@ -70,3 +70,9 @@ footer {
     text-align: center;
     height: min-content;
 }
+
+@media (max-width: 1000px) {
+    html {
+        width: 95%;
+    }
+}
